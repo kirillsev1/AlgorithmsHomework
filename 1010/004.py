@@ -9,7 +9,7 @@ def minimumAbsDifference(arr):
     pair = []
     diff = 10000000
     dct = {}
-    # Запускаем список по длине списка
+    # Запускаем цикл по длине списка для поиска минимальной разницы
     for i in range(len(arr) - 1):
         # Записываем в diff  значение diff или мождуль разницы двух чисел
         diff = min(diff, abs(arr[i] - arr[i + 1]))
