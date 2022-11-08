@@ -1,5 +1,5 @@
 def getKth(lo, hi, k):
-    # O(n) + O(n) + O(n**2)
+    # O(n) + O(n) + O(n**2) + O(n )
     # Создаем словарь с числами от lo до hi
     steps = {}
     for i in range(lo, hi+1):
