@@ -16,7 +16,8 @@ def uniquePathsWithObstacles(obstacleGrid):
                     # То прибавляем и записываем кол-во путей в матрицу
                     dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
     # Выводим последний элемент матрицы
+    print(dp)
     return dp[-1][-1]
 
 
-print(uniquePathsWithObstacles([[0, 1], [0, 0]]))
+print(uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]))
